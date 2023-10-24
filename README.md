@@ -1,1 +1,1 @@
-This is a React website script for 현현일주(hyunhyunilju.)
+This is a React website script for 현현일주(hyunhyunilju).
