@@ -1,0 +1,148 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px; /* Adjust the gap between each item as required */
+    width: 15rem; /* Take the full width on mobile */
+    max-width: 480px; /* You can adjust this value according to your preference */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 1rem;
+    padding-top: 70px;
+}
+
+/* Set the width of the name field, date container, and submit button to 100% of the form container */
+.name-field, 
+.date-container, 
+.submit-button {
+    width: 100%;
+    height: 2.5rem;
+}
+
+/* .name-field,
+.select-field {
+    height: 2.5rem;
+} */
+
+.name-field {
+    padding: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.name-field:focus {
+    border-color: #0078d4; 
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    gap: 10px;  
+}
+
+.select-field {
+    background-color: white;
+    color: black;
+    padding: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    /* box-sizing: border-box; */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background: url('your-arrow-image.png') no-repeat right center; */
+}
+
+.select-field, .select-field option {
+    text-align: center;
+}
+
+.select-field.year {
+    width: 44%;
+    box-sizing: border-box;
+}
+
+.select-field.month, 
+.select-field.day {
+    width: 28%;
+    box-sizing: border-box;
+}
+
+.select-field:focus {
+    border-color: #0078d4;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.error-message {
+    color: red;
+    margin-top: 0.03rem;
+    font-size: 0.9rem;
+    animation: fadeIn 0.5s forwards, fadeOut 0.5s 2s forwards;
+}
+
+.error-message-container {
+    height: 2rem;  /* Adjust this value according to your error message's height */
+    margin-top: 0.625px;
+    overflow: hidden;
+}
+
+/* .error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9rem;
+} */
+
+.submit-button {
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0078d4;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #005fa3;
+}
+
+.submit-button:active {
+    background-color: #004677;
+}
+
+/* For tablets and above */
+@media (min-width: 768px) {
+    .form-container {
+        width: 18rem; /* You can adjust this percentage for tablets */
+        gap: 20px; /* Increase the gap slightly for tablets */
+    }
+
+    .name-field, .submit-button {
+        font-size: 1.125rem; /* Slightly increase font size for tablets */
+    }
+
+    .select-field {
+        font-size: 1.125rem;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+} 

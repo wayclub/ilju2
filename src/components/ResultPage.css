@@ -1,0 +1,60 @@
+.result-container {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    animation: fadeIn 1.5s forwards;
+
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.result-image {
+    width: 100%;
+    object-fit: cover;
+    /* aspect-ratio: 1/1; ensure 1:1 ratio */
+    margin-bottom: 1.25rem;
+}
+
+.result-name {
+    font-size: 1.25rem;
+    color: black;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.result-hashtag {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 1.25rem;
+}
+
+.result-description {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.retake-test-button {
+    font-size: 0.75rem;
+    background-color: rgb(199, 199, 199);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.retake-test-button:hover {
+    /* Optional: styles for hover effect */
+    background-color: rgb(185, 185, 185);
+}
+
