@@ -92,7 +92,7 @@
 .error-message {
     color: red;
     margin-top: 0.03rem;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     animation: fadeIn 0.5s forwards, fadeOut 0.5s 2s forwards;
 }
 
