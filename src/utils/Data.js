@@ -17,8 +17,8 @@ export const imagesAndDescriptions = [
     iljuString: "병인",
     name: "병인(丙寅)",
     image: "/imgs/병인.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 병인"
+    hashtags: "#밝은성격 #리더십 #성급함 #편견없음",
+    description: "병인일주는 밝고 화려한 성격을 지녔으며, 강력한 양의 기운과 함께 성급한 성향을 보입니다. 그들은 리더십이 뛰어나 원대한 포부를 갖고 있지만, 동시에 성공과 실패를 반복하는 인생을 가질 수 있습니다. \n그들은 주변에 항상 사람이 많으며, 편견 없이 누구에게나 친절하게 대하며, 주위의 사람들로부터 많은 관심을 받습니다."
   },
   {
     iljuString: "정묘",
@@ -45,8 +45,8 @@ export const imagesAndDescriptions = [
     iljuString: "경오",
     name: "경오(庚午)",
     image: "/imgs/경오.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 경오"
+    hashtags: "#유머감각 #반듯한성격 #옳은길추구 #사교적인활동",
+    description: "경오일주는 원만한 처세와 자존심을 바탕으로 어려운 상황을 극복하는 성격을 지녔으며, 마음이 넓고 쾌활한 사람이 많습니다. 그러나 인기가 많고 반듯한 성향 때문에 종종 시기와 질투를 받는 경향이 있습니다. \n경오일주는 자신의 영역에 대한 확고한 선과 의지를 지니고, 옳은 길과 바른 길을 추구하는 강한 의지를 가지고 있습니다."
   },
   {
     iljuString: "신미",
@@ -80,15 +80,15 @@ export const imagesAndDescriptions = [
     iljuString: "을해",
     name: "을해(乙亥)",
     image: "/imgs/을해.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 을해"
+    hashtags: "#침착성 #인간적성향 #끈기 #외유내강",
+    description: "을해일주는 명랑한 기운과 함께 침착하고 인간적인 성향을 갖추었습니다. 이 일주는 강한 내면의 힘을 갖추고 있어, 겉으로는 온유하지만 속은 격렬한 모순을 가지고 있습니다. \n인내심과 끈기가 강해 오랜 노력과 몰두를 통해 큰 결심을 가지고 일을 추진하는 경향이 있습니다."
   },
   {
     iljuString: "병자",
     name: "병자(丙子)",
     image: "/imgs/병자.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 병자"
+    hashtags: "#천성 #기분파 #지속성 #자존심",
+    description: "병자일주는 세상을 밝히는 지도자의 성격을 가지며, 천간과 지지의 극단적인 에너지가 만나 엄청난 에너지를 발휘합니다. 이 에너지는 종종 기분파로 나타나며, 그러나 아이러니하게도 지속성과 순수함을 가진 성격을 표현합니다. \n병자일주의 천성은 인자하고 고결하며, 그들 사이에는 강한 결속력과 가족애, 그리고 높은 자존심과 단정함이 있습니다."
   },
   {
     iljuString: "정축",
@@ -115,8 +115,8 @@ export const imagesAndDescriptions = [
     iljuString: "경진",
     name: "경진(庚辰)",
     image: "/imgs/경진.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 경진"
+    hashtags: "#두뇌회전 #자기주장 #판단력 #재주",
+    description: "경진일주는 두뇌회전이 빠르고, 심신이 강건하며 인내심이 있습니다. 자기 주장이 강하고, 판단력이 뛰어나며, 끼와 재주가 탁월합니다. \n하지만 고집 때문에 주변과 부딪히는 경우가 많으며, 유연성이 필요하다는 것을 기억해야 합니다."
   },
   {
     iljuString: "신사",
@@ -150,15 +150,15 @@ export const imagesAndDescriptions = [
     iljuString: "을유",
     name: "을유(乙酉)",
     image: "/imgs/을유.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 을유"
+    hashtags: "#강인함 #예술적감각 #명석한두뇌 #성공후주의",
+    description: "을유일주는 겉으로 부드러워 보이지만, 실제로는 강인하고 강한 생존 능력을 지녔습니다. 이 일주의 두뇌는 명석하며, 개성이 강하고 예술적 감각이 탁월합니다. \n그러나 성공 후에는 권력을 즐기는 경향이 있어 주의가 필요합니다."
   },
   {
     iljuString: "병술",
     name: "병술(丙戌)",
     image: "/imgs/병술.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 병술"
+    hashtags: "#단정함 #외로움 #고독 #학문",
+    description: "병술일주는 세속적인 성공, 재물, 그리고 명예와 연관되어 있습니다. 본인들은 아픔을 안고 있지만 속정이 깊으며, 단정한 특징을 지니고 있습니다. \n반면 외로움과 고독도 느끼는 특징을 가지고 있으며, 학문이나 예술에 뛰어난 재능을 지녔습니다."
   },
   {
     iljuString: "정해",
@@ -185,8 +185,8 @@ export const imagesAndDescriptions = [
     iljuString: "경인",
     name: "경인(庚寅)",
     image: "/imgs/경인.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 경인"
+    hashtags: "#활동성 #긍정성 #개척력 #강한기운",
+    description: "경인일주는 재물복과 성공운이 있으며, 활동적이고 긍정적인 성향을 가지고 있습니다. 그러나 관심이 없는 일이나 명예와 돈과 관련이 없는 일에는 적극성을 보이지 않으며, 결정적인 순간에 맺고 끊는 힘이 약하다는 특징이 있습니다. \n또한, 경인일주는 개척력과 조직에 대한 큰 공헌과 이익을 가지며, 강한 기운을 지니고 있습니다."
   },
   {
     iljuString: "신묘",
@@ -227,8 +227,8 @@ export const imagesAndDescriptions = [
     iljuString: "병신",
     name: "병신(丙申)",
     image: "/imgs/병신.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 병신"
+    hashtags: "#재주 #활동성 #사리분별 #다재다능",
+    description: "병신일주는 활동적이고 재주가 많은 성격을 가지고 있으며, 성격은 원만하면서도 사리분별이 좋아 사회생활에 잘 어울립니다. 그러나 과도한 활동성으로 인한 불안정함과 질병이나 사고에 취약한 경향이 있습니다. \n또한, 지적인 관심과 재주를 가지고 있어 두뇌가 총명하며 매사에 다재다능의 능력을 발휘합니다."
   },
   {
     iljuString: "정유",
@@ -255,8 +255,8 @@ export const imagesAndDescriptions = [
     iljuString: "경자",
     name: "경자(庚子)",
     image: "/imgs/경자.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 경자"
+    hashtags: "#총명함 #표현력 #집요함 #고독감",
+    description: "경자일주는 뛰어난 재주와 총명함을 지녔으며, 특히 언어 능력과 표현력이 뛰어납니다. 하지만 자존심이 강해 자신의 주장을 굽히기 어려운 편이며, 하나에 꽂히면 그것을 끝까지 추구하는 성향이 있습니다. \n또한, 깨끗한 마음을 유지하려는 경향이 있어 외부와의 관계에서 고독을 느끼기도 합니다."
   },
   {
     iljuString: "신축",
@@ -297,8 +297,8 @@ export const imagesAndDescriptions = [
     iljuString: "병오",
     name: "병오(丙午)",
     image: "/imgs/병오.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 병오"
+    hashtags: "#강력한기 #극단적성향 #빠른판단력 #인내력부족",
+    description: "병오일주는 강력한 기를 지니며, 성취와 실패 사이의 극단적인 특성을 가지고 있습니다. 그들은 빠르고 정교한 판단력을 갖추었지만, 빠른 판단 때문에 손해를 입는 경우도 있습니다. \n또한, 병오일주는 속상함이나 불만을 잘 잊고, 큰 변화나 어려움에도 부딪혀 나가는 인성을 지니고 있습니다."
   },
   {
     iljuString: "정미",
@@ -325,15 +325,15 @@ export const imagesAndDescriptions = [
     iljuString: "경술",
     name: "경술(庚戌)",
     image: "/imgs/경술.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 경술"
+    hashtags: "#자기주관 #재능 #직관력 #강인함",
+    description: "경술일주의 기본 성향은 자기 주관이 확고하고 예체능에 재능이 있어 자신감이 넘치며, 섬세하고 치밀한 시각과 판단력을 지녔습니다. 그러나 종종 남의 의견을 무시하는 경향이 있어 반감을 사기도 하지만, 직관력이 뛰어나 천부적인 감각의 왕이라고 볼 수 있습니다. \n경술일주의 특징 중 하나는 강한 힘을 지녀, 그 힘을 사용해 남을 도와야 인생이 평화로울 것이라는 믿음을 갖고 있습니다."
   },
   {
     iljuString: "신해",
     name: "신해(辛亥)",
     image: "/imgs/신해.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 신해"
+    hashtags: "#재능 #천재성 #사리분별력 #대인관계",
+    description: "신해일주의 천성은 선량하며 재능이 풍부하나, 종종 타인과 갈등을 겪을 수 있습니다. 이들은 자신의 관심 분야에서 천재적 능력을 발휘하며, 동시에 사리 분별력이 뛰어나고 조직을 잘 정리하는 경향이 있습니다. \n그러나 너무 자신의 논리에 집착하다 보니 대인관계에서는 원만하지 못하며, 고독한 성격의 소유자가 많습니다"
   },
   {
     iljuString: "임자",
@@ -367,8 +367,8 @@ export const imagesAndDescriptions = [
     iljuString: "병진",
     name: "병진(丙辰)",
     image: "/imgs/병진.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 병진"
+    hashtags: "#밝은에너지 #명랑성향 #원만한인간관계 #선견지명",
+    description: "병진일주는 밝고 긍정적인 에너지로 가득 차 있으며, 명랑하고 자비로운 성향을 가지고 있습니다. 또한 인간관계에서 중후하고 원만하게 행동하며, 선견지명과 예민한 감수성을 지녔습니다. \n병진일주는 조직에서는 시간이 지나면 좋은 평가를 받는 경향이 있으며, 자신의 이상을 숨기는 경향도 강하다."
   },
   {
     iljuString: "정사",
@@ -395,8 +395,8 @@ export const imagesAndDescriptions = [
     iljuString: "경신",
     name: "경신(庚申)",
     image: "/imgs/경신.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 경신"
+    hashtags: "#카리스마 #자기확신 #명예중시 #승부욕",
+    description: "경신일주는 주관이 뚜렷하며 경쟁과 승부욕이 강한 성향을 지녔습니다. \n이들은 강한 자기 확신과 카리스마를 가지고 있지만, 고집이 강해 때로는 자신만의 세계에 갇힐 위험이 있습니다. 또한 명예를 중시하며, 그로 인한 승부근성이 매우 강한 특징을 지녔습니다."
   },
   {
     iljuString: "신유",
