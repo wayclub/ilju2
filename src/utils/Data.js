@@ -31,15 +31,15 @@ export const imagesAndDescriptions = [
     iljuString: "무진",
     name: "무진(戊辰)",
     image: "/imgs/무진.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 무진"
+    hashtags: "#완벽주의 #리더쉽 #성숙성 #경쟁력",
+    description: "무진일주는 힘과 완벽주의가 특징이며, 스스로 부족함이 없다고 느낍니다. 리더로서의 위치에서는 높은 기준과 가혹한 면모를 보이기도 하지만, 초년의 고생을 겪은 무진일주는 성숙하고 책임감 있는 성격을 갖게 됩니다. \n예의와 경쟁력을 동시에 갖추고 있어, 상대와의 기준 차이에 유의해야 합니다."
   },
   {
     iljuString: "기사",
     name: "기사(己巳)",
     image: "/imgs/기사.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 기사"
+    hashtags: "#추진력 #학문 #끈질김 #다면성",
+    description: "기사일주는 세월이 흐를수록 성공이 있으며, 노력과 인내심이 뛰어난 유형입니다. 겉과 속이 다르며, 승부욕과 추진력이 강하지만 때로는 고집으로 나타납니다. \n학문과 깊은 견문을 추구하며, 끈질기게 목표를 향해 전진하는 성격을 가지고 있습니다."
   },
   {
     iljuString: "경오",
@@ -52,22 +52,22 @@ export const imagesAndDescriptions = [
     iljuString: "신미",
     name: "신미(辛未)",
     image: "/imgs/신미.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 신미"
+    hashtags: "#외유내강 #분석력 #사회적능력 #신앙학문",
+    description: "신미일주는 외유내강의 특성을 지녔으며, 분석력이 뛰어나나 지나치게 냉정할 때가 있습니다. \n사회적 능력이 활발하며, 세상을 잘 관찰하고 사람들의 눈치를 잘 본다는 특징이 있습니다. 또한, 신미일주의 사람은 신앙이나 학문에 깊은 관심을 갖는 경향이 있습니다."
   },
   {
     iljuString: "임신",
     name: "임신(壬申)",
     image: "/imgs/임신.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 임신"
+    hashtags: "#완벽주의 #문화예술 #능수능란 #대인관계",
+    description: "임신일주의 사람들은 문화와 예술 분야에서 뛰어난 재능을 지니며, 폭넓은 지식과 다방면의 재주를 갖추고 있습니다. 그러나 너무 많은 관심사 때문에 한 분야에서 빠르게 성공하기는 어려울 수 있습니다. \n대인관계에서 능수능란하게 행동하지만, 때로는 자신의 속내를 표현하지 않아 고독한 경향도 나타납니다."
   },
   {
     iljuString: "계유",
     name: "계유(癸酉)",
     image: "/imgs/계유.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 계유"
+    hashtags: "#화려함 #여림 #기억력 #효율성",
+    description: "계유일주는 겉으로 화려하지만 내면은 여린 성향을 지니고 있으며, 그러한 화려함과 여림으로 인해 많은 사람들의 관심을 받습니다. 이들은 깊은 기억력과 암기력을 갖추었으며, 효율성과 가성비가 좋아 조금의 배움으로 큰 성과를 낼 수 있습니다. \n그러나 자신의 재주에 과신하여 여러 일에 손을 대다가 실패하는 경우도 있습니다."
   },
   {
     iljuString: "갑술",
@@ -102,14 +102,14 @@ export const imagesAndDescriptions = [
     name: "무인(戊寅)",
     image: "/imgs/무인.png",
     hashtags: "#활발한에너지 #사회성 #소통 #다양한교류 #활동적",
-    description: "무인 태생의 사람들은 그들의 활발한 에너지와 사회성으로 주변을 밝게 만듭니다. 그들은 타인과의 소통을 중요시하며, 다양한 사람들과의 교류를 즐깁니다. 그러나 지나친 활동성으로 인해 여유를 갖지 못하는 경우가 있습니다."
+    description: "무인일주는 그들의 활발한 에너지와 사회성으로 주변을 밝게 만듭니다. 그들은 타인과의 소통을 중요시하며, 다양한 사람들과의 교류를 즐깁니다. 그러나 지나친 활동성으로 인해 여유를 갖지 못하는 경우가 있습니다."
   },
   {
     iljuString: "기묘",
     name: "기묘(己卯)",
     image: "/imgs/기묘.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 기묘"
+    hashtags: "#지도적성격 #안정적에너지 #만물생산 #가족우선주의",
+    description: "기묘일주는 만물을 포용하고 생산하는 성격을 지녔으며, 조용하면서도 지도적인 입장을 취하는 것을 선호합니다. 그 특성 상 안정적인 에너지를 발산하면서도 가족을 중심으로 생각하는 가족 우선주의의 성향을 보입니다. \n그러나 때로는 끈기가 부족하여 일을 오래 집중하거나 이어가지 못하는 경향도 갖추고 있습니다."
   },
   {
     iljuString: "경진",
@@ -122,22 +122,22 @@ export const imagesAndDescriptions = [
     iljuString: "신사",
     name: "신사(辛巳)",
     image: "/imgs/신사.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 신사"
+    hashtags: "#변화추구 #완벽주의 #예민성향 #결과중시",
+    description: "신사일주는 변화와 완벽주의를 추구하면서도 예민한 성향과 강한 주관을 가집니다. \n대인관계에서는 충돌이 잦으나, 좋아하는 사람에게는 무조건적인 희생을 아끼지 않는 모습을 보이기도 합니다. 결과를 중시하며, 끈질기게 목표를 향해 나아가는 성향이 돋보입니다."
   },
   {
     iljuString: "임오",
     name: "임오(壬午)",
     image: "/imgs/임오.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 임오"
+    hashtags: "#부드러움 #민첩성 #새로운질서 #극단적힘",
+    description: "임오일주는 부드러운 성격과 섬세함을 가지지만, 동시에 민감하고 극단적인 기운을 지녔습니다. 그들은 손과 생각이 민첩하며, 특유의 지혜와 눈치가 빠르며, 위기 대처 능력이 뛰어납니다. \n임오일주는 새로운 질서와 변화를 추구하면서도 극단적인 힘을 동시에 지니고 있어, 그들의 삶은 흥미롭지만 도전적일 수 있습니다."
   },
   {
     iljuString: "계미",
     name: "계미(癸未)",
     image: "/imgs/계미.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 계미"
+    hashtags: "#부드러움 #원만한대인관계 #행복철학 #추진력",
+    description: "계미일주의 사람들은 부드럽고 맑은 성격을 지니며 대인관계에서 원만하게 행동합니다. 그들은 자신만의 행복 철학이 있으며, 아무려면 어떤 어려운 환경에서도 삶의 희망을 잃지 않습니다. \n그러나 시작하기가 어려울 때가 있어도 한번 시작하면 그들의 추진력은 탱크처럼 강력합니다."
   },
   {
     iljuString: "갑신",
@@ -171,8 +171,8 @@ export const imagesAndDescriptions = [
     iljuString: "무자",
     name: "무자(戊子)",
     image: "/imgs/무자.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 무자"
+    hashtags: "#신중 #합리성 #중도적 #균형",
+    description: "무자일주는 말과 행동이 신중하며, 정재적인 성향이 강합니다. 주요 특징으로는 신중함과 합리성을 중시하며, 중도적인 성향을 가지고 있습니다. \n그러나 무자일주는 자신의 균형을 잘 지키지 못하면 큰 손실을 입을 수 있습니다."
   },
   {
     iljuString: "기축",
@@ -192,22 +192,22 @@ export const imagesAndDescriptions = [
     iljuString: "신묘",
     name: "신묘(辛卯)",
     image: "/imgs/신묘.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 신묘"
+    hashtags: "#재능 #꼼꼼 #의심 #성공",
+    description: "신묘일주는 재능이 뛰어나며, 꼼꼼하고 알뜰한 성격을 가지고 있습니다. \n그러나 그들의 꼼꼼한 성격으로 인해 의심이 많아, 때로는 분쟁을 일으키기도 합니다. 하지만 그들이 차근차근 전진하면, 그 태도가 결국 성공과 부를 가져다 줍니다."
   },
   {
     iljuString: "임진",
     name: "임진(壬辰)",
     image: "/imgs/임진.png",
-    hashtags: "#섬세 #꼼꼼 #주의깊음 #신뢰받음 #큰그림놓침",
-    description: "임진 태생의 사람들은 섬세하고, 꼼꼼한 성격을 지녔습니다. 그들은 세세한 부분까지 주의 깊게 살펴보며, 놓치지 않는 성격이 많은 사람들에게 신뢰를 줍니다. 하지만 지나치게 꼼꼼한 탓에 때로는 큰 그림을 놓칠 수 있습니다."
+    hashtags: "#섬세 #꼼꼼 #주의깊음 #신뢰받음 #멀티태스킹",
+    description: "임진 태생의 사람들은 섬세하고, 꼼꼼한 성격을 지녔습니다. 그들은 세세한 부분까지 주의 깊게 살펴보며, 놓치지 않는 성격이 많은 사람들에게 신뢰를 줍니다. \n하지만 지나치게 꼼꼼한 탓에 때로는 큰 그림을 놓칠 수 있습니다."
   },
   {
     iljuString: "계사",
     name: "계사(癸巳)",
     image: "/imgs/계사.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 계사"
+    hashtags: "#계획성 #완벽주의 #추진력 #활동력",
+    description: "계사일주는 사회에서 활발하게 활동하며, 원칙과 계획을 바탕으로 움직입니다. 하지만 그들의 완벽주의 성향으로 인해 결정을 내리는데 시간이 많이 소요됩니다. \n이들은 높은 추진력과 활동력을 바탕으로 조직에서 빠른 승진을 하는 경향이 있습니다.사"
   },
   {
     iljuString: "갑오",
@@ -241,8 +241,8 @@ export const imagesAndDescriptions = [
     iljuString: "무술",
     name: "무술(戊戌)",
     image: "/imgs/무술.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 무술"
+    hashtags: "#명예 #자존심 #독특성향 #강한힘",
+    description: "무술일주는 자신만의 믿음을 가지며 융통성이 떨어지지만 명예와 자존심을 중시합니다. 자존심은 그들에게 굉장히 중요하며, 그들의 강한 힘은 일상적이지 않은 독특한 사고를 가져다줍니다. \n무술일주는 세상의 거친 요소들을 극복하는 능력이 있으며, 그들의 힘은 항상 숨겨져 있지만 크게 표출될 때 강력합니다."
   },
   {
     iljuString: "기해",
@@ -262,15 +262,15 @@ export const imagesAndDescriptions = [
     iljuString: "신축",
     name: "신축(辛丑)",
     image: "/imgs/신축.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 신축"
+    hashtags: "#지혜 #성실 #냉정 #종교관심",
+    description: "신축일주는 지혜와 정밀한 손재주를 가진 사람들이 많으며, 주체성이 강하고, 근면하고 성실한 성격의 소유자입니다. \n그러나 노력에 비해 보상이 적어서 좌절감을 느낄 수 있고, 자존심이 상할 경우 뒤끝이 길다. 냉정하고 깨끗한 인상을 가지며, 종교나 철학에 대한 관심이 깊습니다."
   },
   {
     iljuString: "임인",
     name: "임인(壬寅)",
     image: "/imgs/임인.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 임인"
+    hashtags: "#융통성 #박력 #학문 #지혜",
+    description: "임인일주는 융통성과 느긋함을 갖추면서도 박력이 있어, 생명의 물로 만물을 길러낸다는 기운을 지녔습니다. \n사회적 활동에서는 자신의 위치에서 점점 더 큰 사회로 나아가며 역할을 수행하며, 학문과 지혜에 뛰어나 지혜롭게 문제를 해결하며 자존심을 유지합니다."
   },
   {
     iljuString: "계묘",
@@ -311,8 +311,8 @@ export const imagesAndDescriptions = [
     iljuString: "무신",
     name: "무신(戊申)",
     image: "/imgs/무신.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 무신"
+    hashtags: "#카리스마 #낙천적 #의지박약 #독립성",
+    description: "무신일주의 사람들은 카리스마 있고, 낙천적인 성향을 가지며 섬세하고 예민한 관찰력을 갖추고 있습니다. 그러나 의지박약과 게으름의 특징도 있으며, 다양한 관심사로 인해 쉽게 포기하는 경향이 있습니다. \n또한, 무신일주는 변화를 추구하고 일반적인 경로나 충고를 따르기를 꺼려하며, 자신만의 방식으로 일을 처리하는 경향이 있습니다."
   },
   {
     iljuString: "기유",
@@ -339,15 +339,15 @@ export const imagesAndDescriptions = [
     iljuString: "임자",
     name: "임자(壬子)",
     image: "/imgs/임자.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 임자"
+    hashtags: "#의욕적 #끈기 #통솔력 #눈치빠름",
+    description: "임자일주의 사람들은 의욕적이며 진취적인 기질을 가지고 있지만, 화를 내기 쉬운 경향이 있습니다. 그들은 굉장한 두뇌와 통솔력을 지녔으며, 끈기와 인내심이 특징입니다. \n또한, 임자일주의 사람들은 매우 눈치가 빠르며 상대방의 마음을 잘 읽을 수 있습니다."
   },
   {
     iljuString: "계축",
     name: "계축(癸丑)",
     image: "/imgs/계축.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 계축"
+    hashtags: "#자존심 #추진력 #인정욕구 #명예심",
+    description: "계축일주의 성격은 믿음직스러운데, 시작은 느리나 일단 시작하면 결과를 꼭 이룹니다. 목표와 인정을 중요하게 생각하며, 행동이 느려도 인정을 받을 때만큼은 활기를 발휘합니다. \n계축일주는 겉모습보다 내면에 강한 추진력과 자존심을 가지며, 지나치게 깨끗하게 일처리나 사람 관계를 정리하는 경향이 있습니다."
   },
   {
     iljuString: "갑인",
@@ -381,15 +381,15 @@ export const imagesAndDescriptions = [
     iljuString: "무오",
     name: "무오(戊午)",
     image: "/imgs/무오.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 무오"
+    hashtags: "#만물포용 #인내노력 #갈증인생 #기분변화",
+    description: "무오일주는 만물을 생산하고 포용하는 강력한 힘을 지니지만, 뜨거운 기운이 제어되지 않으면 인생에 갈증을 느낍니다. 일지의 특성으로 인해 무오일주는 인내와 노력으로 성공을 이루나, 동시에 고통과 함께하는 경향이 있습니다. \n무오일주의 주변인들은 그들의 현재 상태와 기분 변화에 주의해야 합니다."
   },
   {
     iljuString: "기미",
     name: "기미(己未)",
     image: "/imgs/기미.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 기미"
+    hashtags: "#뚝심 #명예욕 #자존심 #사교성",
+    description: "기미일주는 꾸준한 뚝심과 승부욕을 지녔으며 명예와 자존심에 대한 강렬한 욕구가 있습니다. 그러나 자신의 영역과 가족을 중심으로 생각하며, 다른 모습을 겉과 안에서 다르게 보이는 경향이 있습니다. \n이들은 겉으로는 사교적인 모습을 보이지만 속으로는 보수적이며 폐쇄적인 성격을 가지고 있습니다."
   },
   {
     iljuString: "경신",
@@ -402,21 +402,21 @@ export const imagesAndDescriptions = [
     iljuString: "신유",
     name: "신유(辛酉)",
     image: "/imgs/신유.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 신유"
+    hashtags: "#정의로움 #프로의식 #예술적자질 #인간관계갈등",
+    description: "신유일주는 예술적 자질과 기술적 장인정신이 뛰어나지만 자존심이 강하여 인간관계에서 갈등을 겪을 때가 많습니다. 판단력은 예리하며 세밀한 직관력을 갖췄지만, 그 예리함 때문에 사소한 일에도 예민하게 반응하며, 자부심과 주관이 확고합니다. \n그러나 정의롭고 정직한 기질을 갖추고 있으며, 프로의식이 높아 어떤 직업에서도 전문성을 발휘합니다."
   },
   {
     iljuString: "임술",
     name: "임술(壬戌)",
     image: "/imgs/임술.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 임술"
+    hashtags: "#온화한성격 #재물능력 #대인관계 #육감적직관",
+    description: "임술일주는 온화하고 쾌활한 성격을 가졌으며, 재물에 관한 능력이 뛰어납니다. 대인관계 능력이 탁월하며, 육감과 직관 또한 매우 높습니다. \n그러나 자신의 판단을 과도하게 믿어 큰 손실을 겪을 수 있으며, 고난 앞에서도 긍정적인 태도를 유지합니다."
   },
   {
     iljuString: "계해",
     name: "계해(癸亥)",
     image: "/imgs/계해.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 계해"
+    hashtags: "#신비감 #머리회전 #과시욕 #글로벌사고",
+    description: "계해일주는 뚜렷한 신비감과 머리 회전으로 사건을 해결하는 능력을 지니고 있지만, 동시에 고독과 외로움을 느낍니다. 그들은 말을 할 때 가장 중요한 것을 표현하며, 뛰어난 머리로 어려운 상황도 잘 극복합니다. \n그러나 과시욕이 있어 때때로 사회적 고립을 경험할 수 있으며, 해외와의 연관성이 깊어 글로벌한 사고 방식을 가집니다."
   },
 ];
