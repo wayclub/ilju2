@@ -24,8 +24,8 @@ export const imagesAndDescriptions = [
     iljuString: "정묘",
     name: "정묘(丁卯)",
     image: "/imgs/정묘.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 정묘"
+    hashtags: "#융통성 #다재다능 #동정심 #변덕스러움",
+    description: "정묘일주는 융통성과 발표력을 지니면서 명랑하고 밝은 성격을 갖추고 있습니다. 다재다능한 성향과 빠른 상황 판단 능력, 센스와 스타일에 있어 뛰어난 경향이 있지만, 변덕스럽고 결정에 어려움을 겪는 특징도 보입니다. \n주변 사람들과의 관계에서는 동정심을 잘 발휘하지만, 때로는 지나치게 주는 경향이 있어 사람들이 부담을 느낄 수 있습니다."
   },
   {
     iljuString: "무진",
@@ -94,8 +94,8 @@ export const imagesAndDescriptions = [
     iljuString: "정축",
     name: "정축(丁丑)",
     image: "/imgs/정축.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 정축"
+    hashtags: "#침착한외면 #활동성 #지혜로움 #따뜻함",
+    description: "정축일주는 침착하고 편안한 외면을 보이나 내면에서는 활동성과 강한 욕구가 흐릅니다. 성격이 급하고 예민하며, 외롭고 고독한 감정이 자주 따라다니는 특징을 가지고 있습니다. \n그럼에도 불구하고 지혜롭고 따뜻한 성격을 지니며, 주변 사람들에게 잘하려는 경향이 있습니다."
   },
   {
     iljuString: "무인",
@@ -164,8 +164,8 @@ export const imagesAndDescriptions = [
     iljuString: "정해",
     name: "정해(丁亥)",
     image: "/imgs/정해.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 정해"
+    hashtags: "#온순함 #보호능력 #평탄한삶 #처세력",
+    description: "정해일주는 온순하고 착실하며 주변의 칭찬을 많이 받지만, 변덕스럽게 행동하여 주변을 힘들게 할 때도 있습니다. 그는 어려운 상황에서도 자신을 보호하는 능력이 있으며, 평생 무난하고 평탄한 삶을 이루게 됩니다. \n그러나 일찍 지치는 경향이 있으며, 처세가 뛰어나기 때문에 주변의 시샘을 받을 수 있습니다."
   },
   {
     iljuString: "무자",
@@ -178,8 +178,8 @@ export const imagesAndDescriptions = [
     iljuString: "기축",
     name: "기축(己丑)",
     image: "/imgs/기축.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 기축"
+    hashtags: "#성실함 #끈기 #정신건강 #긍정태도",
+    description: "기축일주는 꼼꼼하고 성실한 성향을 지녔으며, 어떤 일을 하더라도 그것을 극복해 내려는 끈기를 보입니다. 그러나 습한 기운으로 인해 정신적 건강에 유의해야 하며, 긍정적으로 인생을 이끌어 나가는 것이 중요합니다. 이 사람들은 근면과 성실함으로 인해 어려움을 극복하며 조금씩 열심히 해 성공하는 경향이 있습니다."
   },
   {
     iljuString: "경인",
@@ -234,8 +234,8 @@ export const imagesAndDescriptions = [
     iljuString: "정유",
     name: "정유(丁酉)",
     image: "/imgs/정유.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 정유"
+    hashtags: "#순수 #명석두뇌 #다재다능 #고집",
+    description: "정유일주는 전체적으로 조화로운 성향과 발전을 보이며, 맑고 순수한 기운으로 타인에게 사랑을 받는 특징이 있습니다. 그러나 순수한 성향을 오남용하면 부정적인 결과를 초래할 수 있으며, 고집이 세고 화를 잘 내는 성격도 갖추고 있습니다. \n또한, 재능과 명석한 두뇌를 가지고 있어 여러 분야에서 활약할 수 있는 능력을 가지고 있습니다."
   },
   {
     iljuString: "무술",
@@ -248,8 +248,8 @@ export const imagesAndDescriptions = [
     iljuString: "기해",
     name: "기해(己亥)",
     image: "/imgs/기해.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 기해"
+    hashtags: "#안정성 #잠재력 #정신건강 #끈기",
+    description: "기해일주는 소극적이면서도 은근한 끈기와 정직함으로 많은 사람들에게 인정받는 성품을 가지고 있습니다. 반듯하게 행동하려는 기해일주는 재물에 대한 안정성이 높고, 주변 사람들에게는 알다가도 모를 성향과 깊은 잠재력을 갖고 있습니다. \n그러나 내면의 감정 발산이 부족하므로 정신적인 부분에서 어려움을 겪을 수 있습니다."
   },
   {
     iljuString: "경자",
@@ -263,7 +263,7 @@ export const imagesAndDescriptions = [
     name: "신축(辛丑)",
     image: "/imgs/신축.png",
     hashtags: "#지혜 #성실 #냉정 #종교관심",
-    description: "신축일주는 지혜와 정밀한 손재주를 가진 사람들이 많으며, 주체성이 강하고, 근면하고 성실한 성격의 소유자입니다. \n그러나 노력에 비해 보상이 적어서 좌절감을 느낄 수 있고, 자존심이 상할 경우 뒤끝이 길다. 냉정하고 깨끗한 인상을 가지며, 종교나 철학에 대한 관심이 깊습니다."
+    description: "신축일주는 지혜와 정밀한 손재주를 가진 사람들이 많으며, 주체성이 강하고, 근면하고 성실한 성격의 소유자입니다. \n그러나 노력에 비해 보상이 적어서 좌절감을 느낄 수 있고, 자존심이 상할 경우 뒤끝이 깁니다. 냉정하고 깨끗한 인상을 가지며, 종교나 철학에 대한 관심이 깊습니다."
   },
   {
     iljuString: "임인",
@@ -304,8 +304,8 @@ export const imagesAndDescriptions = [
     iljuString: "정미",
     name: "정미(丁未)",
     image: "/imgs/정미.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 정미"
+    hashtags: "#성실함 #명랑함 #결단력 #융통성",
+    description: "정미일주는 성실하고 안정적인 성향을 가진 사람이지만 때로는 융통성이 부족하게 느껴질 수 있습니다. 그러나 그들은 어려운 환경에서도 명랑하게 버텨나가며, 어려움을 겪으면서 성장하는 성향이 있습니다. \n주변에서는 그들의 온화하고 착한 성향을 높이 평가하며, 그들이 한번 결정하면 끝까지 밀어붙이는 단호한 성격을 가지고 있다는 것을 알고 있습니다."
   },
   {
     iljuString: "무신",
@@ -318,8 +318,8 @@ export const imagesAndDescriptions = [
     iljuString: "기유",
     name: "기유(己酉)",
     image: "/imgs/기유.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 기유"
+    hashtags: "#탐구심 #신뢰와신임 #교육능력 #예민성향",
+    description: "기유일주는 탐구심이 강하고 조직에서 신뢰와 신임을 잘 받는 성향을 가지고 있습니다. 현실적인 성향으로 자신의 것을 잘 챙기며, 교육 분야에서 큰 힘을 발휘하는 일주입니다. \n그러나 예민하고 까칠한 경향도 가지고 있어 대중 앞에서는 날카로운 모습이 드러날 수 있습니다."
   },
   {
     iljuString: "경술",
@@ -368,14 +368,14 @@ export const imagesAndDescriptions = [
     name: "병진(丙辰)",
     image: "/imgs/병진.png",
     hashtags: "#밝은에너지 #명랑성향 #원만한인간관계 #선견지명",
-    description: "병진일주는 밝고 긍정적인 에너지로 가득 차 있으며, 명랑하고 자비로운 성향을 가지고 있습니다. 또한 인간관계에서 중후하고 원만하게 행동하며, 선견지명과 예민한 감수성을 지녔습니다. \n병진일주는 조직에서는 시간이 지나면 좋은 평가를 받는 경향이 있으며, 자신의 이상을 숨기는 경향도 강하다."
+    description: "병진일주는 밝고 긍정적인 에너지로 가득 차 있으며, 명랑하고 자비로운 성향을 가지고 있습니다. 또한 인간관계에서 중후하고 원만하게 행동하며, 선견지명과 예민한 감수성을 지녔습니다. \n병진일주는 조직에서는 시간이 지나면 좋은 평가를 받는 경향이 있으며, 자신의 이상을 숨기는 경향이 강합니다."
   },
   {
     iljuString: "정사",
     name: "정사(丁巳)",
     image: "/imgs/정사.png",
-    hashtags: "#HashTag1 #HashTag2",
-    description: "Description for 정사"
+    hashtags: "#강한의지 #권력추구 #신념중시 #기억력",
+    description: "정사일주는 강한 의지와 활동성을 가진 사람이지만 지나치게 자기 중심적이어서 남과의 관계에서 융화가 어렵습니다. \n권력과 실리를 중요하게 생각하며, 자신의 신념과 정의로움을 중시합니다. 그러나 기억력이 좋아 오래전의 좋은 일도 기억하여 돌려주는 성향이 있습니다."
   },
   {
     iljuString: "무오",
