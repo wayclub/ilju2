@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 
 const USE_IMAGE_LOGO = false; // true: use image, false: use text
-const LOGO_TEXT = "현현";
+const LOGO_TEXT = "현현일주";
 const LOGO_SRC = "/path/to/logo.png"; 
 
 function Header() {
