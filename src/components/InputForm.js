@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import './InputForm.css';
 
 const years = Array.from({length: 100}, (_, i) => new Date().getFullYear() - i);
@@ -58,6 +59,10 @@ function InputForm({ onSubmit }) {
 
     return (
         <form className='form-container' onSubmit={handleSubmit}>
+            <Helmet>
+                <title>일주 찾기 - 입력 페이지</title>
+                <meta name="description" content="생년월일을 입력하고 내 일주를 찾아보세요. (사주팔자 일주)" />
+            </Helmet>
             <input
                 className='name-field' 
                 type="text" 
