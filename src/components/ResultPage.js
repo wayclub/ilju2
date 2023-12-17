@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { getIljuString } from '../utils/DateLogic';
 import { imagesAndDescriptions } from '../utils/Data';
 import './ResultPage.css';
@@ -9,8 +10,17 @@ function ResultPage({ data, imageLoaded }) { // Added imageLoaded prop
     // Find the matched description from imagesAndDescriptions
     const matchedDescription = imagesAndDescriptions.find(desc => desc.iljuString === iljuString);
 
+    // Combine description and hashtags
+    const metaDescription = matchedDescription 
+                            ? `${matchedDescription.description} ${matchedDescription.hashtags}`
+                            : '일주 결과 설명';
+
     return (
         <div className="result-container">
+            <Helmet>
+                <title>{matchedDescription ? `${matchedDescription.name}일주` : '일주 결과'}</title>
+                <meta name="description" content={metaDescription} />
+            </Helmet>
             {matchedDescription && (
                 <>
                     {imageLoaded ? (
