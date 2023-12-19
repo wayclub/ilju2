@@ -72,7 +72,7 @@ function InputForm({ onSubmit }) {
             />
             <div className="date-container">
                 <select className='select-field year' value={year} onChange={(e) => setYear(e.target.value)}>
-                    <option value="" disabled className="date-placeholder-option">연도</option>
+                    <option value="" disabled className="date-placeholder-option">생년</option>
                     {years.map(y => <option key={y} value={y}>{y}년</option>)}
                 </select>
 
