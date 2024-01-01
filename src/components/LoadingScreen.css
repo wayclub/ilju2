@@ -28,7 +28,7 @@
     border-radius: 50%;
     position: relative;
     border: 3px solid transparent;
-    border-top-color: #0078d4;  /* Spinner color */
+    border-top-color: black;  /* Spinner color */
     animation: spin 5s ease-out infinite;
     /* , fill 7s forwards; */
     margin-bottom: 1.25rem;

@@ -44,8 +44,8 @@
 
 .retake-test-button {
     font-size: 0.875rem;
-    background-color: rgb(199, 199, 199);
-    color: black;
+    background-color: black;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -55,6 +55,10 @@
 
 .retake-test-button:hover {
     /* Optional: styles for hover effect */
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(71, 71, 71);
+}
+
+.retake-test-button:active {
+    background-color: darkgray;
 }
 

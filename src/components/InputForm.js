@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './InputForm.css';
 
@@ -24,9 +24,6 @@ function getDaysInMonth(month, year) {
 }
 
 function InputForm({ onSubmit }) {
-    // const [year, setYear] = useState(new Date().getFullYear());
-    // const [month, setMonth] = useState(new Date().getMonth() + 1);
-    // const [day, setDay] = useState(new Date().getDate());
     const [days, setDays] = useState(Array.from({ length: 31 }, (_, i) => i + 1));
     const [year, setYear] = useState("");
     const [month, setMonth] = useState("");
@@ -35,13 +32,14 @@ function InputForm({ onSubmit }) {
     const [errorMessage, setErrorMessage] = useState("");
     const [errorCount, setErrorCount] = useState(0);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const numberOfDays = getDaysInMonth(Number(month), Number(year));
         setDays(Array.from({ length: numberOfDays }, (_, i) => i + 1));
     }, [month, year]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
         if (!name || !year || !month || !day) {
             setErrorMessage('모든 정보를 입력해주세요.');
             setErrorCount(prevCount => prevCount + 1);
@@ -53,46 +51,46 @@ function InputForm({ onSubmit }) {
         
         // Handle the submission logic
         const birthday = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
         onSubmit(name, birthday);
         console.log(year, month, day);
     };
 
     return (
-        <form className='form-container' onSubmit={handleSubmit}>
+        <div>
             <Helmet>
                 <title>일주 찾기 - 입력 페이지</title>
                 <meta name="description" content="생년월일을 입력하고 내 일주를 찾아보세요. (사주팔자 일주)" />
             </Helmet>
-            <input
-                className='name-field' 
-                type="text" 
-                placeholder="이름" 
-                value={name} 
-                onChange={(e) => setName(e.target.value)} 
-            />
-            <div className="date-container">
-                <select className='select-field year' value={year} onChange={(e) => setYear(e.target.value)}>
-                    <option value="" disabled className="date-placeholder-option">생년</option>
-                    {years.map(y => <option key={y} value={y}>{y}년</option>)}
-                </select>
+            <form className='form-container' onSubmit={handleSubmit}>
+                <input
+                    className='name-field' 
+                    type="text" 
+                    placeholder="이름" 
+                    value={name} 
+                    onChange={(e) => setName(e.target.value)} 
+                />
+                <div className="date-container">
+                    <select className='select-field year' value={year} onChange={(e) => setYear(e.target.value)}>
+                        <option value="" disabled className="date-placeholder-option">생년</option>
+                        {years.map(y => <option key={y} value={y}>{y}년</option>)}
+                    </select>
 
-                <select className='select-field month' value={month} onChange={(e) => setMonth(e.target.value)}>
-                    <option value="" disabled>월</option>
-                    {months.map(m => <option key={m} value={m}>{m}월</option>)}
-                </select>
-                <select className='select-field day' value={day} onChange={(e) => setDay(e.target.value)}>
-                    <option value="" disabled>일</option>
-                    {days.map(d => <option key={d} value={d}>{d}일</option>)}
-                </select>
-            </div>
-            <button className='submit-button' type="submit">일주 찾기</button>
-            {/* <div className="error-message-container">
-                {errorMessage && <p className="error-message">{errorMessage}</p>}
-            </div> */}
-            <div className="error-message-container">
-                {errorMessage && <div key={errorCount} className="error-message">{errorMessage}</div>}
-            </div>
-        </form>
+                    <select className='select-field month' value={month} onChange={(e) => setMonth(e.target.value)}>
+                        <option value="" disabled>월</option>
+                        {months.map(m => <option key={m} value={m}>{m}월</option>)}
+                    </select>
+                    <select className='select-field day' value={day} onChange={(e) => setDay(e.target.value)}>
+                        <option value="" disabled>일</option>
+                        {days.map(d => <option key={d} value={d}>{d}일</option>)}
+                    </select>
+                </div>
+                <button className='submit-button' type="submit">일주 찾기</button>
+                <div className="error-message-container">
+                    {errorMessage && <div key={errorCount} className="error-message">{errorMessage}</div>}
+                </div>
+            </form>
+        </div>
     );
 }
 
