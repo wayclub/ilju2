@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { imagesAndDescriptions } from '../utils/Data';
 import './ResultPage.css';
 
-function ResultPage() { // Added imageLoaded prop
+function ResultPage({ setLoading }) { // Added imageLoaded prop
     const { iljuString } = useParams(); 
     // Find the matched description from imagesAndDescriptions
     const matchedDescription = imagesAndDescriptions.find(desc => desc.iljuString === iljuString);
@@ -14,9 +14,12 @@ function ResultPage() { // Added imageLoaded prop
         if (matchedDescription) {
             const image = new Image();
             image.src = matchedDescription.image;
-            image.onload = () => setImageLoaded(true);
+            image.onload = () => {
+                setImageLoaded(true);
+                setLoading(false); // Set loading to false after image is loaded
+            };
         }
-    }, [matchedDescription]);
+    }, [matchedDescription, setLoading]);
 
     const content = imageLoaded && matchedDescription ? (
         <>
@@ -49,22 +52,6 @@ function ResultPage() { // Added imageLoaded prop
                 <meta name="description" content={metaDescription} />
             </Helmet>
             {content}
-            {/* {imageLoaded && matchedDescription ? (
-                <>
-                    <img src={matchedDescription.image} alt={iljuString} className="result-image" />
-                    <p className="result-name">{matchedDescription.name}</p>
-                    <p className="result-hashtag">{matchedDescription.hashtags}</p>
-                    <div className="result-description">
-                        {matchedDescription.description.split('\n').map((line, index) => (
-                            <span key={index}>
-                                {line}
-                                <br />
-                            </span>
-                        ))}
-                    </div>
-                    <button className="retake-test-button" onClick={() => window.location.href = "/"}>다른 일주 보기</button>
-                </>
-            ) : null } */}
         </div>
 
     );

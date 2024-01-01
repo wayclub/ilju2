@@ -16,12 +16,17 @@ function App() {
 
   const handleSubmit = (name, birthday) => {
     setLoading(true);
+    
+    // Calculate iljuString and navigate to results page
+    const iljuString = getIljuString(birthday);
+    // setLoading(false);
+    navigate(`/results/${iljuString}`);
 
     // Start loading the image and other data processing
     // Once done, set loading to false and navigate to the results page
     setTimeout(() => {
         setLoading(false);
-        navigate(`/results/${getIljuString(birthday)}`);
+    //     navigate(`/results/${getIljuString(birthday)}`);
     }, 5000);
   };
 
@@ -46,7 +51,7 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<InputForm onSubmit={handleSubmit} />} />
-            <Route path="/results/:iljuString" element={<ResultPage />} />
+            <Route path="/results/:iljuString" element={<ResultPage setLoading={setLoading} />} />
           </Routes>
         )}
       </div>
