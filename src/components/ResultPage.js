@@ -18,6 +18,23 @@ function ResultPage() { // Added imageLoaded prop
         }
     }, [matchedDescription]);
 
+    const content = imageLoaded && matchedDescription ? (
+        <>
+            <img src={matchedDescription.image} alt={iljuString} className="result-image" />
+            <p className="result-name">{matchedDescription.name}</p>
+            <p className="result-hashtag">{matchedDescription.hashtags}</p>
+            <div className="result-description">
+                {matchedDescription.description.split('\n').map((line, index) => (
+                    <span key={index}>
+                        {line}
+                        <br />
+                    </span>
+                ))}
+            </div>
+            <button className="retake-test-button" onClick={() => window.location.href = "/"}>다른 일주 보기</button>
+        </>
+    ) : null;
+
     // Combine description and hashtags
     const metaDescription = matchedDescription 
                             ? `${matchedDescription.description} ${matchedDescription.hashtags}`
@@ -26,12 +43,13 @@ function ResultPage() { // Added imageLoaded prop
     // console.log(`${process.env.PUBLIC_URL}${matchedDescription.image}`);
     console.log(matchedDescription.image)
     return (
-        <div className="result-container">
+        <div className="result-container" style={{ opacity: imageLoaded ? 1 : 0 }}>
             <Helmet>
                 <title>{`${matchedDescription.name}일주`}</title>
                 <meta name="description" content={metaDescription} />
             </Helmet>
-            {imageLoaded && matchedDescription ? (
+            {content}
+            {/* {imageLoaded && matchedDescription ? (
                 <>
                     <img src={matchedDescription.image} alt={iljuString} className="result-image" />
                     <p className="result-name">{matchedDescription.name}</p>
@@ -46,7 +64,7 @@ function ResultPage() { // Added imageLoaded prop
                     </div>
                     <button className="retake-test-button" onClick={() => window.location.href = "/"}>다른 일주 보기</button>
                 </>
-            ) : null }
+            ) : null } */}
         </div>
 
     );
