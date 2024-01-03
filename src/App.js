@@ -8,6 +8,7 @@ import InputForm from './components/InputForm';
 import LoadingScreen from './components/LoadingScreen';
 import ResultPage from './components/ResultPage';
 import { getIljuString } from './utils/DateLogic';
+import { imagesAndDescriptions } from './utils/Data';
 import './App.css';
 
 function App() {
@@ -19,14 +20,34 @@ function App() {
     
     // Calculate iljuString and navigate to results page
     const iljuString = getIljuString(birthday);
-    // setLoading(false);
-    navigate(`/results/${iljuString}`);
+    const matchedDescription = imagesAndDescriptions.find(desc => desc.iljuString === iljuString);
+
+    // Start preloading the image
+    const image = new Image();
+    image.src = matchedDescription.image;
+
+    // image.onload = () => {
+    //   // Once image is loaded, navigate to the results page
+    //   setLoading(false);
+    //   navigate(`/results/${iljuString}`);
+    // };
+
+    // // Fallback to navigate after 5 seconds in case the image loading takes too long
+    // setTimeout(() => {
+    //   if (!image.complete) {
+    //     setLoading(false);
+    //     navigate(`/results/${iljuString}`);
+    //   }
+    // }, 5000);
+
+    // // setLoading(false);
+    // navigate(`/results/${iljuString}`);
 
     // Start loading the image and other data processing
     // Once done, set loading to false and navigate to the results page
     setTimeout(() => {
         setLoading(false);
-    //     navigate(`/results/${getIljuString(birthday)}`);
+        navigate(`/results/${iljuString}`);
     }, 5000);
   };
 
@@ -51,11 +72,12 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<InputForm onSubmit={handleSubmit} />} />
-            <Route path="/results/:iljuString" element={<ResultPage setLoading={setLoading} />} />
+            <Route path="/results/:iljuString" element={<ResultPage />} />
           </Routes>
         )}
       </div>
       <Footer />
+      {/* setLoading={setLoading} */}
     </div>
   );
 }

@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom';
 import { imagesAndDescriptions } from '../utils/Data';
 import './ResultPage.css';
 
-function ResultPage({ setLoading }) { // Added imageLoaded prop
+// { setLoading }
+function ResultPage() { // Added imageLoaded prop
     const { iljuString } = useParams(); 
     // Find the matched description from imagesAndDescriptions
     const matchedDescription = imagesAndDescriptions.find(desc => desc.iljuString === iljuString);
@@ -16,10 +17,10 @@ function ResultPage({ setLoading }) { // Added imageLoaded prop
             image.src = matchedDescription.image;
             image.onload = () => {
                 setImageLoaded(true);
-                setLoading(false); // Set loading to false after image is loaded
+                // setLoading(false); // Set loading to false after image is loaded
             };
         }
-    }, [matchedDescription, setLoading]);
+    }, [matchedDescription]);
 
     const content = imageLoaded && matchedDescription ? (
         <>
