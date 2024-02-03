@@ -26,28 +26,11 @@ function App() {
     const image = new Image();
     image.src = matchedDescription.image;
 
-    // image.onload = () => {
-    //   // Once image is loaded, navigate to the results page
-    //   setLoading(false);
-    //   navigate(`/results/${iljuString}`);
-    // };
-
-    // // Fallback to navigate after 5 seconds in case the image loading takes too long
-    // setTimeout(() => {
-    //   if (!image.complete) {
-    //     setLoading(false);
-    //     navigate(`/results/${iljuString}`);
-    //   }
-    // }, 5000);
-
-    // // setLoading(false);
-    // navigate(`/results/${iljuString}`);
-
     // Start loading the image and other data processing
     // Once done, set loading to false and navigate to the results page
     setTimeout(() => {
         setLoading(false);
-        navigate(`/results/${iljuString}`);
+        navigate(`/results/${iljuString}`, { state: { name, birthday } });
     }, 5000);
   };
 

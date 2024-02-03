@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return (
         <div className="footer">
-            © 2023 현현. All rights reserved.
+            © 2023-2024 현현. All rights reserved.
         </div>
     );
 }

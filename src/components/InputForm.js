@@ -53,7 +53,7 @@ function InputForm({ onSubmit }) {
         const birthday = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
         onSubmit(name, birthday);
-        console.log(year, month, day);
+        // console.log(year, month, day);
     };
 
     return (

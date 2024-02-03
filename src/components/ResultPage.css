@@ -27,19 +27,22 @@
     color: black;
     margin-bottom: 1.25rem;
     text-align: left;
+    font-weight: bold;
 }
 
 .result-hashtag {
     font-size: 1rem;
     color: black;
     margin-bottom: 1.25rem;
+    font-weight: bold;
 }
 
 .result-description {
     font-size: 1rem;
     color: black;
     margin-bottom: 2rem;
-}
+    line-height: 1.5em;
+} 
 
 .retake-test-button {
     font-size: 0.875rem;
@@ -61,3 +64,47 @@
     background-color: darkgray;
 }
 
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This will space out the items */
+    width: 100%; /* Ensure it takes full width */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    margin-bottom: 1.25rem; /* Space above the image */
+}
+
+.user-name, .user-birthday, .divider {
+    text-align: center;
+    margin: 0 5px; /* Adjust spacing around each item */
+}
+
+.user-name {
+    flex-grow: 1; /* Takes up twice the space compared to other elements */
+    font-size: 1rem; /* Adjust as needed */
+}
+
+.user-birthday {
+    flex-grow: 1; /* Each child takes equal width */
+    font-size: 1rem; /* Adjust as needed */
+}
+
+.divider {
+    /* Style for the divider */
+    font-size: 1rem;
+}
+
+@media (max-width: 425px) {
+    /* Global styles for tablet and larger screens */
+    .result-hashtag {
+        font-size: 0.9rem;
+        color: black;
+        margin-bottom: 1.25rem;
+        font-weight: bold;
+    }
+    
+    .result-description {
+        font-size: 0.9rem;
+        color: black;
+        margin-bottom: 2rem; 
+    }
+  }

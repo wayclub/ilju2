@@ -26,3 +26,6 @@ yarn-error.log*
 /txtfiles
 textextractor.py
 
+/public/RouteConfig.js
+sitemap-generator.js
+

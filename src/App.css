@@ -12,11 +12,16 @@ html, body {
   flex: 1; /* take up all available space */
 }
 
+.app-container,
+.content-container {
+  width: 100%;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* take up full viewport height */
-  width: 100%;
+  /* width: 100%; */
   max-width: 480px;
   margin: 0 auto; /* center the container horizontally */
 }
