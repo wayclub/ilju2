@@ -29,3 +29,5 @@ textextractor.py
 /public/RouteConfig.js
 sitemap-generator.js
 
+/public/sitemap.xml
+
