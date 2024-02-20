@@ -67,7 +67,7 @@ function InputForm({ onSubmit }) {
         const birthday = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
         try {
             logUserData(name, birthday, deviceInfo)
-            // onSubmit(name, birthday);
+            onSubmit(name, birthday);
         } catch (error) {
             console.error("Failed to log user data:", error);
         }
