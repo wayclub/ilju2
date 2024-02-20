@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './InputForm.css';
+import { logUserData } from '../logUserData';
+import PrivacyPolicyModal from './PrivacyPolicyModal';
 
 const years = Array.from({length: 100}, (_, i) => new Date().getFullYear() - i);
 const months = Array.from({length: 12}, (_, i) => i + 1);
@@ -23,6 +25,14 @@ function getDaysInMonth(month, year) {
     }
 }
 
+function getDeviceInfo() {
+    return {
+      userAgent: navigator.userAgent,
+      platform: navigator.platform,
+      isMobile: /Mobi|Android/i.test(navigator.userAgent),
+    };
+  }
+
 function InputForm({ onSubmit }) {
     const [days, setDays] = useState(Array.from({ length: 31 }, (_, i) => i + 1));
     const [year, setYear] = useState("");
@@ -31,6 +41,7 @@ function InputForm({ onSubmit }) {
     const [name, setName] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
     const [errorCount, setErrorCount] = useState(0);
+    const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
 
     useEffect(() => {
         const numberOfDays = getDaysInMonth(Number(month), Number(year));
@@ -39,6 +50,9 @@ function InputForm({ onSubmit }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        // const ip = await getUserIP(); 
+        const deviceInfo = getDeviceInfo();
 
         if (!name || !year || !month || !day) {
             setErrorMessage('모든 정보를 입력해주세요.');
@@ -51,15 +65,20 @@ function InputForm({ onSubmit }) {
         
         // Handle the submission logic
         const birthday = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        try {
+            logUserData(name, birthday, deviceInfo)
+            // onSubmit(name, birthday);
+        } catch (error) {
+            console.error("Failed to log user data:", error);
+        }
 
-        onSubmit(name, birthday);
         // console.log(year, month, day);
     };
 
     return (
         <div>
             <Helmet>
-                <title>일주 찾기 - 입력 페이지</title>
+                <title>면면일주</title>
                 <meta name="description" content="생년월일을 입력하고 내 일주를 찾아보세요. (사주팔자 일주)" />
             </Helmet>
             <form className='form-container' onSubmit={handleSubmit}>
@@ -90,6 +109,13 @@ function InputForm({ onSubmit }) {
                     {errorMessage && <div key={errorCount} className="error-message">{errorMessage}</div>}
                 </div>
             </form>
+            <div className='privacyPolicyText'>
+                <button className='privacyPolicyLink' onClick={() => setShowPrivacyPolicy(true)}>
+                    개인정보처리방침
+                </button>
+            </div>
+
+            {showPrivacyPolicy && <PrivacyPolicyModal onClose={() => setShowPrivacyPolicy(false)} />}
         </div>
     );
 }

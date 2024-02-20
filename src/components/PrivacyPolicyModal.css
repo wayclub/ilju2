@@ -1,0 +1,85 @@
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  position: relative;
+  /* padding: 2rem; */
+  border-radius: 5px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  /* display: flex;
+  flex-direction: column; 
+  justify-content: space-between;  */
+}
+
+.modalScrollContent {
+  padding: 2rem; /* Space for your content */
+}
+
+.modalHeader {
+  position: sticky;
+  top: 0;
+  background: white; /* Match the modal's background */
+  padding: 10px 20px; /* Adjust as needed */
+  text-align: right; /* Align the close button to the right */
+  border-radius: 5px 5px 0 0; /* Match modalContent's border-radius for the top corners */
+}
+
+.modalContent h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modalContent h3 {
+  margin-bottom: 1rem; /* Space below headers before text */
+}
+
+.modalContent p {
+  margin-bottom: 1rem; /* Space after paragraphs */
+}
+
+.modalContent ul {
+  margin-left: 1.25rem; /* Indentation for bullet points */
+  margin-bottom: 1rem; /* Space after lists */
+}
+
+.modalContent li {
+  margin-bottom: 0.5rem; /* Space between bullet points */
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f2f2f2;
+  color: black;
+  border: none;
+  padding: 0; /* Adjusted to remove default padding */
+  width: 30px; /* Ensures square dimensions */
+  height: 30px; /* Ensures square dimensions */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold; /* Make the 'X' bolder */
+  display: flex; /* Enables center alignment of content */
+  align-items: center; /* Vertically centers the 'X' */
+  justify-content: center; /* Horizontally centers the 'X' */
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: #e6e6e6; /* Even lighter shade of gray for hover effect */
+}
