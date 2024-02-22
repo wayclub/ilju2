@@ -2,23 +2,26 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;  /* Added to ensure it stretches to the right end */
+    right: 0;
     height: 50px;
     background-color: #ececec;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between; /* Updated to space-between to push items to edges */
     align-items: center;
-    /* box-sizing: border-box;  Added to ensure padding is included in the width */
-    padding: 10px 10px;  /* Simplified padding */
-    z-index: 1000;       /* To ensure the header is always on top */
+    padding: 10px 20px; /* Adjusted padding for symmetry */
+    z-index: 1000;
 }
 
-.logo-image {
-    height: 40px;  /* Adjust as needed */
+.instagram-logo {
+    height: 1.25rem; /* Ensure Instagram logo matches your logo's height */
 }
 
 .logo-text {
     font-size: 1rem;
     color: black;
-    /* margin-left: 10px; */
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
 }
