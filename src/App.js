@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
@@ -14,6 +14,20 @@ import './App.css';
 function App() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleRightClick = (event) => {
+      event.preventDefault();
+      // Optionally, you can alert the user or do nothing
+      // alert('Right-click is disabled on this page');
+    };
+
+    document.addEventListener('contextmenu', handleRightClick);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleRightClick);
+    };
+  }, []);
 
   const handleSubmit = (name, birthday) => {
     setLoading(true);

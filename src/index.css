@@ -16,6 +16,14 @@ body {
   font-family: 'mainfont', Arial, sans-serif;
 }
 
+img {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard syntax */
+  -webkit-touch-callout: none; /* iOS Safari */
+}
+
 @media (min-width: 768px) {
   /* Global styles for tablet and larger screens */
   body {
